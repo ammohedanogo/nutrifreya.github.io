@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<!--FORMULARIOS-->
+<html lang="es">
+    <head>
+    
+        <meta charset="utf-8" />
+        <title>NutriFreya</title>
+        <link rel="icon" type="image/x-icon"  href="img/logo1.png"/>
+        <link rel="stylesheet" type="text/css"  href="css/estilos.css" />
+        <link id="tema" rel="stylesheet" type="text/css" href="css/verde.css" />
+
+    </head>
+    <body>
+
+        <!--Inicio de la cabecera-->
+        <header id="header">
+            <div id="logotipo">
+                <img src="img/logo23.png" alt="Logotipo de la web" />
+                
+            </div>
+            <h1>NutriFreya</h1>
+        </header>
+
+        <!--Fin de la cabecera-->
+
+
+        <!--Menú de navegación-->
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="cap1.html">Alimentación y Salud</a>
+                    <ul>
+                        <li>
+                            <a href="vacio.html">Alimentación saludable</a>
+                        </li>
+                        <li>
+                            <a href="vacio.html">Alimentación por etapas</a>
+                        </li>
+                        <li>
+                            <a href="vacio.html">Problemas de salud</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cap2.html">Grupos de alimentos</a>
+                </li>
+                <li>
+                    <a href="cap3.html">Formularios</a>
+                </li>
+                <li>
+                    <a href="cap4.html">Contacto</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <!--Fin del menú de navegación-->
+
+        
+<!--contenido formularios-->
+        <div id="box">
+                <aside id=content>
+
+                    <!-- Cargar formulario -->
+                   
+                    <article class="article">
+                        <h2 class="titulo">FORMULARIOS</h2>
+
+                        <form action="lario" method="POST" id="form_contact">
+
+                            <p><label>Nombre:
+                                <input type="text" name="name" data-validation="alphanumeric" placeholder="Escribe tu nombre"/>
+                            </label></p>
+
+                            <p><label>Apellidos:
+                                <input type="text" name="surname" data-validation="alphanumeric" placeholder="Escribe tus apellidos"/>
+                            </label></p>
+                            
+                            <p><label>Dirección de correo electrónico:
+                                <input type="email" name="email" data-validation="email" placeholder="Introduce tu email"/>
+                            </label></p>
+
+                            <p><label> Género:
+                            <select name="sex" data-validation="required">
+                                <option value="men">Hombre</option>
+                                <option value="woman">Mujer</option>
+                            </select>
+                            </label></p>
+
+                            <p><label>Fecha de nacimiento:
+                                <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy" placeholder="Introduce tu fecha de nacimiento"/>
+                            </label></p>
+                            
+                            <p><label>Edad: 
+                                <input type="text" name="years" data-validation="number" placeholder="Escribe tu edad"/>
+                            </label></p>
+
+                            <p><label>Peso(Kg):
+                                <input type="number" name="weigth" data-validation="number" placeholder="Escribe tu peso"/>
+                            </label></p>
+
+                            <p><label>Altura(cm):
+                                <input type="number" name="heigth" data-validation="number" placeholder="Escribe tu altura"/>
+                            </label></p>
+
+                            <p><label>IMC(peso(kg)/Altura^2(m):
+                                <input type="number" name="imc" data-validation="number" placeholder="Escribe tu índice de masa muscular"/>
+                            </label></p>
+
+                            <p><label>Actividad Física:
+                                <select name="sport" data-validation="required">
+                                    <option value="veryhigh">Alta</option>
+                                    <option value="high">Muy alta</option>
+                                    <option value="moderate">Moderada</option>
+                                    <option value="low">Baja</option>
+                                    <option value="verylow">Muy baja</option>  
+                                </select>
+                            </label></p>
+
+                            <p><label>Consumo de suplementos:
+                                <input type="text" name="supl" data-validation="lphanumeric" placeholder="Escribe que suplementos consumes"/>
+                            </label></p>
+
+                            <input type="submit" value="Enviar" />
+                        </form>
+                    </article>
+                </aside>
+            
+        </div>
+
+            <!--fin contenido formularios-->
+
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+
+            <script src="main.js"></script>
+
+             <!--Hora y cambiador de tema-->
+
+        <div id="hora"></div>
+
+        <div id="selector-tema">
+			<div id="verde"></div>
+			<div id="rojo"></div>
+			<div id="azul"></div>
+		</div>
+    </body>
+</html>

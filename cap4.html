@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<!--CURSOS NUTRICIÓN-->
+<html lang="es">
+    <head>
+    
+        <meta charset="utf-8" />
+        <title>NutriFreya</title>
+        <link rel="icon" type="image/x-icon"  href="img/logo1.png"/>
+        <link rel="stylesheet" type="text/css"  href="css/estilos.css" />
+        <link id="tema" rel="stylesheet" type="text/css" href="css/verde.css" />
+
+    </head>
+    <body>
+        <!--Inicio de la cabecera-->
+        <header id="header">
+            <div id="logotipo">
+                <img src="img/logo23.png" alt="Logotipo de la web" />
+                
+            </div>
+            <h1>NutriFreya</h1>
+        </header>
+
+        <!--Fin de la cabecera-->
+
+
+        <!--Menú de navegación-->
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="cap1.html">Alimentación y Salud</a>
+                    <ul>
+                        <li>
+                            <a href="vacio.html">Alimentación saludable</a>
+                        </li>
+                        <li>
+                            <a href="vacio.html">Alimentación por etapas</a>
+                        </li>
+                        <li>
+                            <a href="vacio.html">Problemas de salud</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cap2.html">Grupos de alimentos</a>
+                </li>
+                <li>
+                    <a href="cap3.html">Formularios</a>
+                </li>
+                <li>
+                    <a href="cap4.html">Contacto</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <!--Fin del menú de navegación-->
+        
+            <!--Inicio formulario de contacto-->
+            
+            <div class="contact_form">
+
+                <div class="formulario">      
+                  <h1>FORMULARIO DE CONTACTO</h1>
+                    <h3>Escríbenos para contactar contigo en la mayor brevedad posible</h3>
+            
+            
+                      <form action="submeter-formulario.php" method="post">       
+            
+                        
+                            <p>
+                              <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre" required>
+                            </p>
+                          
+                            <p>
+                              <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="email" name="introducir_email" id="email" placeholder="Escribe tu Email" required>
+                            </p>  
+
+                            <p>
+                              <label for="telefono">Teléfono</label>
+                              <input type="text" id="telefono" name="introducir_telefono" data-validation="number" placeholder="Escribe tu número de teléfono"/>
+                            </p>
+                          
+                            <p>
+                              <label for="website" class="colocar_website">Sitio web
+                              </label>
+                                <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                            </p>  
+                            
+                            <p>
+                              <label for="assunto">Asunto </label>
+                              <input type="text" name="introducir_asunto" id="assunto" placeholder="Escribe un asunto"/>
+                              
+                            </p>
+                            
+                          
+                            <p>
+                              <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                              </label>                     
+                                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" placeholder="Deja aquí tu comentario..." required></textarea> 
+                              </p>                    
+                          
+                            <button type="submit" name="enviar_formulario" id="enviar">
+                              Enviar
+                            </button>
+            
+                            <p class="aviso">
+                              <span class="obligatorio"> * </span>campos son obligatorios.
+                            </p>          
+                        
+                      </form>
+                </div>  
+              </div>
+            
+              <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+
+              <script src="main.js"></script>
+
+               <!--Hora y cambiador de tema-->
+
+              <div id="hora"></div>
+
+            <div id="selector-tema">
+              <div id="verde"></div>
+              <div id="rojo"></div>
+              <div id="azul"></div>
+            </div>
+
+    </body>
+</html>
